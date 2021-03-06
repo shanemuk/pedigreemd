@@ -9,6 +9,10 @@ Various standards have been developed over the years for drawing pedigrees in th
 
 There are several pedigree-drawing programs on the market, and many modern EHRs (electronic health records) incorporate at least some pedigree functionality. However for the Genetic Counsellor, Clinical Geneticist or Family History Researcher taking a family history from a patient or client, these can be clunky and paying too much attention to the computer can detract from the value of the consultation. When pedigrees are drawn by hand, transferring these to electronic format can be cumbersome and time-consuming, or the EHR may not have pedigree functionality built in as standard. Even when that functionality exists, outputting the pedigree to a format suitable for inclusion in clinical correspondence may be difficult or unsatisfactory.
 
+## Statement of needs
+So what do we want? We need a plain text format entry 
+
+## Early days: ASCPED
 One very early effort to address this was ASCPED, which sought to largely replicate pedigree output using ASCII characters. An example is shown below.
 ~~~
 [\] Brian Bloggs (deceased)
@@ -23,19 +27,39 @@ One very early effort to address this was ASCPED, which sought to largely replic
                |--<P> Currently pregnant, sex unknown/unspecified
                |--<4> 4 other siblings, sex unspecified
 ~~~
-While this is relatively easily readable in ASCII, it really only works well for simple pedigrees where we're not trying to pull in too much information from different sides of the family. It also starts using up a lot of space characters, so can only align properly in proportional fonts. If we're going to make it easy to record the pedigrees *and* view them, we need to be a bit smarter.
+While this is relatively easily readable in ASCII, it really only works well for simple pedigrees where we're not trying to pull in too much information from different sides of the family. It also starts using up a lot of space characters, so can only align properly in fixed fonts. Proportional fonts will make it wibbly (that's a technical term). If we're going to make it easy to record the pedigrees *and* view them, we need to be a bit smarter, but we might have to make some sacrifices.
 
+## Next iteration
 One way might be to limit the number of cascading indents permitted, and also to do away with as many of the linking characters as possible, for example:
 ~~~
 [\Brian Bloggs] deceased
 &(Jenny Bloggs)
-        [Benny Bloggs]
-        (Lisa Bloggs)
-        (Charlotte Tester) nee Bloggs
-        &[Charlie Tester]
-                (Penelope Tester)
-                <P> Pregnant, sex unknown
-                <4> siblings, sex unspecified
+    [Benny Bloggs]
+    (Lisa Bloggs)
+    (Charlotte Tester) nee Bloggs
+    &[Charlie Tester]
+        (Penelope Tester)
+        <P> Pregnant, sex unknown
+        <4> siblings, sex unspecified
 ~~~
 
-So this is very much a work in progress - suggestions welcome!
+So that's a three generation pedigree, *single lineage*. You'll note I'm still using square brackets `[_]` for male, curved for female `(_)`, but this time instead of putting the names outside the brackets, I'm putting them inside; I'm joining spouses with an `&`. It's not as pretty or readable as the ASCPED example above, but maybe it doesn't have to be.
+
+We could decide to "define" individuals as they become used in the file; potentially we could just list everyone at the top of the file, and then create the pedigree structure further down. Note there would be issues here if two people had the same name, or if you "re-used" someone in a context that didn't make sense in the pedigree. Remember that each individual can only have a pair of parents - in some cases we won't have info on one or other of them, so both parents are probably not strictly necessary
+
+I'm still thinking however that indents might make this a bit tricky, especially for complex pedigrees. What about if we just made the decision that each sibship sits as its own block? We would then explicitly "reuse" individuals as we dealt with each sibship, particularly in multi-generation pedigrees.
+
+~~~
+(Charlotte Tester)
+&[Charlie Tester]
+-(Penelope Tester)
+-<P>
+-<4>
+~~~
+
+Ideally I'd like to be able to (in principle) take a pedigree in Notepad or Word (or the text editor of your choice), then paste/import it into the EHR or pedigree software, where it would read it and output a pretty pedigree in standard format.
+
+## But here is another thing
+In human genetics, we usually draw pedigrees in Landscape mode. Why do we do this? It's a mess, particularly when we start annotating below symbols. Portrait mode is much better. You heard it here first! :-)
+
+This is very much a work in progress - suggestions welcome!
