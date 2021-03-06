@@ -23,6 +23,19 @@ One very early effort to address this was ASCPED, which sought to largely replic
                |--<P> Currently pregnant, sex unknown/unspecified
                |--<4> 4 other siblings, sex unspecified
 ~~~
+While this is relatively easily readable in ASCII, it really only works well for simple pedigrees where we're not trying to pull in too much information from different sides of the family. It also starts using up a lot of space characters, so can only align properly in proportional fonts. If we're going to make it easy to record the pedigrees *and* view them, we need to be a bit smarter.
 
+One way might be to limit the number of cascading indents permitted, and also to do away with as many of the linking characters as possible, for example:
+~~~
+[\Brian Bloggs] deceased
+&(Jenny Bloggs)
+        [Benny Bloggs]
+        (Lisa Bloggs)
+        (Charlotte Tester) nee Bloggs
+        &[Charlie Tester]
+                (Penelope Tester)
+                <P> Pregnant, sex unknown
+                <4> siblings, sex unspecified
+~~~
 
 So this is very much a work in progress - suggestions welcome!
