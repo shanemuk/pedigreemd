@@ -6,6 +6,7 @@
 # Identify them with an ID starting with a %, eg %01 
 # generally keep this for individuals important in the overall scheme of things
 
+$PEDIGREE
 [_]         Billy Bloggs
 (*)&        Jenny Bloggs # the "&" indicates partner relationship with the above
     +[_]        Brian Bloggs # indent 4 characters for each new generation
@@ -13,8 +14,8 @@
     +<4>        # 4 siblings unspecified
                 # Blank lines separate sibships
                 
-(_%001)     Jemima McBloggs; I've given her a declared ID of %001 to link multiple spouses
-[_]&        Jimmy McBloggs # "=" sign denotes consanguinity
+(_%01)      Jemima McBloggs; I've given her a declared ID of %001 to link multiple spouses
+[_]&=       Jimmy McBloggs # "=" sign denotes consanguinity
     +[_]        Kevin McBloggs 
      (_)&       Floella Tester
         +<x>    Kevin and Floella have a bunch of kids
@@ -24,7 +25,7 @@
     +(_)        Betty McBloggs
      [_]&       Jethro McJohnston
         +[_]        Johnny McJohnston
-[_%002]&001     Randall Bloggsworthy (new spouse for Jemima McBloggs, this time non-consanguineous)
+[_%02]&01       Randall Bloggsworthy (new spouse for Jemima McBloggs, this time non-consanguineous)
     +[_]        Denzel Bloggsworthy
     
 # things to think about:
@@ -35,3 +36,15 @@
 # Placing the ID markers inside the parentheses - is this a good move?
 # Additional in-line signifiers needed for DOB
 # Personal *characteristics* inside the parentheses; additional info, eg spousal status, adoption status etc *outside*
+
+# We could potentially make it even easier to enter, and then run a script over it to tidy it up.
+# The following is identical to the first pedigree, and should be totally comprehensible.
+# The asterisk indicates affected status. The patient name starts with the first alphabetic character.
+
+$PEDIGREE
+[Billy Bloggs
+&(*Jenny Bloggs
++[Brian Bloggs
++(*Nigella Bloggs
++<4
+$END
