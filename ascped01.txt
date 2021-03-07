@@ -16,6 +16,7 @@
 =[_]        Jemima McBloggs # "=" sign denotes consanguinity
     +[_]        Kevin McBloggs 
      &(_)       Floella Tester
+        +<x>    Kevin and Floella have a bunch of kids
     ^[_]        twin of Kevin (multiple birth)
     ^[_]        triplet! of the above (& Kevin)
     +x          miscarriage
