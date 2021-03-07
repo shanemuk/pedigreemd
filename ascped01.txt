@@ -6,15 +6,19 @@
 # Identify them with an ID starting with a %, eg %01 
 # generally keep this for individuals important in the overall scheme of things
 
-[_]     Billy Bloggs
-&(*)      Jenny Bloggs # I'm assuming we can cope with a 1 char indent to indicate spousal relationship
-    +[_]    Brian Bloggs # indent 4 characters for each new generation
-    +(*)    Nigella Bloggs # th
-    +<4>    # 4 siblings unspecified
-            # Blank line to separate sibships
-(_)     Jimmy McBloggs
-=[_]    Jemima McBloggs # "=" sign denotes consanguinity
-    +[_]    Kevin McBloggs 
-    ^[_]    twin of the above (multiple birth)
-    ^[_]    triplet! of the above
-    +x      miscarriage
+[_]         Billy Bloggs
+&(*)        Jenny Bloggs # I'm assuming we can cope with a 1 char indent to indicate spousal relationship
+    +[_]        Brian Bloggs # indent 4 characters for each new generation
+    +(*)        Nigella Bloggs # th
+    +<4>        # 4 siblings unspecified
+                # Blank line to separate sibships
+(_)         Jimmy McBloggs
+=[_]        Jemima McBloggs # "=" sign denotes consanguinity
+    +[_]        Kevin McBloggs 
+     &(_)       Floella Tester
+    ^[_]        twin of Kevin (multiple birth)
+    ^[_]        triplet! of the above (& Kevin)
+    +x          miscarriage
+    +(_)        Betty McBloggs
+     &[_]       Jethro McJohnston
+        +[_]        Johnny McJohnston
