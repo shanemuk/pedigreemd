@@ -1,0 +1,19 @@
+# ASCPED01
+# Example pedigree file
+# Trying out some ideas to work on a spec
+
+# PREDEFINE - you can do this to predefine individuals who will pop up later in the pedigree.
+# Identify them with an ID 
+
+[_]     Billy Bloggs
+&(*)      Jenny Bloggs # I'm assuming we can cope with a 1 char indent to indicate spousal relationship
+    +[_]    Brian Bloggs # indent 4 characters for each new generation
+    +(*)    Nigella Bloggs # th
+    +<4>    # 4 siblings unspecified
+    
+(_)     Jimmy McBloggs
+=[_]    Jemima McBloggs # "=" sign denotes consanguinity
+    +[_]    Kevin McBloggs 
+    ^[_]    twin of the above (multiple birth)
+    ^[_]    triplet! of the above
+    +x      miscarriage
