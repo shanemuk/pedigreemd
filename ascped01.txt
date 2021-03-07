@@ -7,19 +7,31 @@
 # generally keep this for individuals important in the overall scheme of things
 
 [_]         Billy Bloggs
-&(*)        Jenny Bloggs # I'm assuming we can cope with a 1 char indent to indicate spousal relationship
+(*)&        Jenny Bloggs # the "&" indicates partner relationship with the above
     +[_]        Brian Bloggs # indent 4 characters for each new generation
-    +(*)        Nigella Bloggs # th
+    +(*)        Nigella Bloggs # the asterisk indicates affected status
     +<4>        # 4 siblings unspecified
-                # Blank line to separate sibships
-(_)         Jimmy McBloggs
-=[_]        Jemima McBloggs # "=" sign denotes consanguinity
+                # Blank lines separate sibships
+                
+(_%001)     Jemima McBloggs; I've given her a declared ID of %001 to link multiple spouses
+[_]&        Jimmy McBloggs # "=" sign denotes consanguinity
     +[_]        Kevin McBloggs 
-     &(_)       Floella Tester
+     (_)&       Floella Tester
         +<x>    Kevin and Floella have a bunch of kids
     ^[_]        twin of Kevin (multiple birth)
     ^[_]        triplet! of the above (& Kevin)
     +x          miscarriage
     +(_)        Betty McBloggs
-     &[_]       Jethro McJohnston
+     [_]&       Jethro McJohnston
         +[_]        Johnny McJohnston
+[_%002]&001     Randall Bloggsworthy (new spouse for Jemima McBloggs, this time non-consanguineous)
+    +[_]        Denzel Bloggsworthy
+    
+# things to think about:
+# Primary objective is to make this easy to note down and to read for humans
+# Secondary objective is to make it easy to read and validate by computers, and record in EHR
+# Keen to keep the # character for code comments, rather than a symbol that does anything in the schema
+# Possibilities for things to get a bit busy
+# Placing the ID markers inside the parentheses - is this a good move?
+# Additional in-line signifiers needed for DOB
+# Personal *characteristics* inside the parentheses; additional info, eg spousal status, adoption status etc *outside*
