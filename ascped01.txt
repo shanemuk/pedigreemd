@@ -41,10 +41,12 @@ $PEDIGREE
 # The following is identical to the first pedigree, and should be totally comprehensible.
 # The asterisk indicates affected status. The patient name starts with the first alphabetic character.
 
-$PEDIGREE
+# Need some convention in the individual line to pull out name, dob, testing info etc
+
+$PEDIGREE # signifies start of Pedigree block - is this overkill?
 [Billy Bloggs
 &(*Jenny Bloggs
 +[Brian Bloggs
 +(*Nigella Bloggs
 +<4
-$END
+$END # wondering if we need start/end definitions?
