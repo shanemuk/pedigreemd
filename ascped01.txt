@@ -50,3 +50,12 @@ $PEDIGREE # signifies start of Pedigree block - is this overkill?
 +(*Nigella Bloggs
 +<4
 $END # wondering if we need start/end definitions?
+
+# Try a three generation pedigree here [in progress]
+[Gramps Paternal
+&(Granny Paternal
+    +[Dad
+    &(Mum
+[Gramps Maternal
+&(Granny Maternal
++(Mum
