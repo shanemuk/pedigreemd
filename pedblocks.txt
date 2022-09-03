@@ -1,0 +1,22 @@
+# This file contains some text blocks for copying and pasting into pedigree files
+# Each block is 8 characters, and each generation gets an 8 character indent by default
+-[_]    
+  |     
+-(_)    
+        
+     |  
+-<_>
+  |--|  
+
+-[_]    
+--------
+
+$pedigree PED012345
+
+
+(Jenny Bloggs @jenb
+&[Jimmy Bloggs
+ -</unspecified
+ -[Billy Bloggs @bblog
+ -(Tammy Bloggs @tammyb
+$end
