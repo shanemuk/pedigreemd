@@ -63,3 +63,5 @@ Ideally I'd like to be able to (in principle) take a pedigree in Notepad or Word
 In human genetics, we usually draw pedigrees in Landscape mode. Why do we do this? It's a mess, particularly when we start annotating below symbols. Portrait mode is much better. You heard it here first! :-)
 
 This is very much a work in progress - suggestions welcome!
+
+Interesting project: [pedigreejs](https://ccge-boadicea.github.io/pedigreejs/) - may be useful.
