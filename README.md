@@ -64,4 +64,9 @@ In human genetics, we usually draw pedigrees in Landscape mode. Why do we do thi
 
 This is very much a work in progress - suggestions welcome!
 
-Interesting project: [pedigreejs](https://ccge-boadicea.github.io/pedigreejs/) - may be useful.
+Interesting project: [pedigreejs](https://ccge-boadicea.github.io/pedigreejs/) - may be useful. Here's what the pedigreejs JSON file looks like:
+~~~
+[{"name":"m11","sex":"M","top_level":true},{"name":"f11","display_name":"Jane","sex":"F","status":1,"top_level":true,"breast_cancer":true,"ovarian_cancer":true},{"name":"m12","sex":"M","top_level":true},{"name":"f12","sex":"F","top_level":true,"breast_cancer":true},{"name":"m21","sex":"M","mother":"f11","father":"m11","age":56},{"name":"f21","display_name":"Joy","sex":"F","mother":"f12","father":"m12","breast_cancer":true,"breast_cancer2":true,"ovarian_cancer":true,"age":63},{"name":"ch1","display_name":"Ana","sex":"F","mother":"f21","father":"m21","proband":true,"age":25}]
+~~~
+
+So we can see to define an individual we need to know their **name** (which is the unique ID); their sex; their mother; their father. Other data attributes can be added as required.
