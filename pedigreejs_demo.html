@@ -16,10 +16,45 @@
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 
  	<script src="https://ccge-boadicea.github.io/pedigreejs/build/pedigreejs.v2.1.0-rc9.js"></script>
-	<--!
+	<!--
 	     WILL NEED TO UPDATE LINKS ABOVE WITH NEW RELEASE CANDIDATES
 	-->
 
+	<!-- OPTS CANDIDATES BELOW -->
+	<!--
+	function openDialog(opts, d) {	
+			var table = "<table id='person_details' class='table'>";
+			table += "<tr><td style='text-align:right'>ID</td><td><input class='form-control' type='text' id='id_name' value="+
+						d.data.name+"></td></tr>";
+ 			$.each(opts.diseases, function(k, v) {
+				var disease_colour = ' <span style="padding-left:5px;background:'+opts.diseases[k].colour+'"></span>';
+				table += '<tr><td colspan="2">' +
+					 	 '<label class="checkbox-inline"><input type="checkbox" id="id_'+v.type +
+					    	'" name="'+v.type+'" value="0" '+(d.data[v.type] ? "checked" : "")+'>'+disease_colour+' ' +
+					        v.type.replace("_", " ")+'</label></td></tr>'
+			});
+ 			$('#node_properties').html(table);
+			$('#node_properties').dialog({title: d.data.display_name});
+			$('#node_properties input[type=checkbox]').change(function() {
+		    	pedigree_form.save(opts);
+		    });
+		}
+
+		var opts = {
+			'targetDiv': 'ped',
+			'btn_target': 'history_ex3',
+			'width': svg_width,
+			'height': 400,
+			'symbol_size': 40,
+			'font_size': '1.1em',
+			'font_family': 'times',
+			'font_weight': 400,
+			'edit': openDialog,
+			'node_background': '#fff',
+			'DEBUG': (pedigree_util.urlParam('debug') === null ? false : true)
+		};
+	-->
+	
 	<script type="text/javascript">
 	function capitaliseFirstLetter(string) {
 	    return string.charAt(0).toUpperCase() + string.slice(1);
