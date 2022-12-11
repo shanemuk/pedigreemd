@@ -3,7 +3,9 @@ Throwing a few ideas around for implementing a markdown spec for pedigree notati
 
 Taking a family tree (pedigree) is an important part of the Clinical Genetics consultation, although there are many other settings where drawing a family tree may be useful. It is also becoming increasingly common as people start researching their own genealogy and ancestry.
 
-However there is no standard form of notation when you're coding this "live", and the very nature of pedigrees makes it difficult to note them down - the biggest problem of course is that everyone has two parents, heading back pretty much ad infinitum, so we don't have one single lineage - we have *many*, and of course those lineages meet multiple common ancestors on their way back into the past. And sometimes there are gaps in our knowledge that may need to be filled in by new information.
+Here's a page I'm building based on **pedigreejs**: [**PEDIGREE EDITOR**](pedigreejs_demo.html)
+
+However there is no standard form of notation when you're coding pedigrees "live", and the very nature of pedigrees makes it difficult to note them down - the biggest problem of course is that everyone has two parents, heading back pretty much ad infinitum, so we don't have one single lineage - we have *many*, and of course those lineages meet multiple common ancestors on their way back into the past. And sometimes there are gaps in our knowledge that may need to be filled in by new information.
 
 Various standards have been developed over the years for drawing pedigrees in the Genetic Counselling scenario. The most commonly used standard derives from https://www.geneticcounselingtoolkit.com/cases/pedigree/Bennett%20JGC%202008%20-%20Standardized%20Human%20Pedigree%20Nomenclature%20-%20Update%20and%20Assessment%20of%20the%20Recommendations%20of%20the%20National%20Society%20of%20Genetic%20Counselors.pdf
 
