@@ -1,0 +1,91 @@
+[]	// This is a very basic initial relationship setup
++A	// +A signifies relationship A; this will always be between 2 individual symbols.
+()	// Parser will be quite forgiving
+
++A 	// this refers back to Relationship "A" as previously defined. Can use ++A to indicate consanguinity
+--[]	Ciaran Bloggs // the "A" designation is not usually needed
+--<2> 	2 unspecified
+
+[] 	Tarquin Blair
++	// the initial definition of a relationship will always be between 2 people.
+() 	Jemima Blair
+--() 	Jenny Blair # the dashes will refer back to the previous "+" relationship at the same indent level
+  +	// in this case Jenny is in a relationship with Cameron.
+  [] 	Cameron Bloggs
+  --() 	Lily Bloggs // their children are Lily and Timmy
+  --[] 	Timmy Bloggs
+--[] 	Noah Blair
+  ++	// consanguineous
+  () 	Nellie Blair
+  --() 	Keelan Blair //(twin of Carter)
+  -%[] 	Carter Blair //(twin of Keelan)
+  --X 	miscarriage
+  --<3> 3 further sibs sex unspecified
+
+[\] deceased male
+(a) female with "a" flag
+?can use pretty much any character as a flag within the individual brackets?
+{[]} adoption brackets - NB: these differ from ACMG/CGS standards
+
+relationship shorthand []+() for cases where you're not adding info outside the brackets
+or
+[] BLOGGS, Jethro
++() // unspecified female partner of Jethro
+
+() BARNETT, Drusilla
++[] // unspecified male partner of Drusilla
+
+[]++C()--[3](2) // consanguineous relationship, 3 male, 2 female
+is equivalent to
+	[]
+	++C
+	()
+	--[3]
+	--(2)
+and quite easily expanded out in text if required.
+Note that the format is really based around the concept of the SIBSHIP - parents & kids.
+In this case the sibship ++C means sibship C, and there is a consanguineous relationship.
+
+TWINS
+All "kids" in a sibship are rendered as -- unless they are multiple births
+-% is a DIZYGOTIC twin relationship to the sibling immediately above (rendered --)
+%% is MONOZYGOTIC twin relationship to the sibling immediately above (who is rendered --)
+
+DISEASE INDICATORS
+Diseases have to be pre-defined in the KEY, and affected status indicated INSIDE the individual brackets.
+KEY
+	a: diabetes
+	b: Breast cancer
+	c: Pancreatic cancer
+	d: learning disability
+	e: epilepsy
+
+
+
+[a]+()
+--[a] Barney McRubble #diabetes:13y
+%%[] Benny McRubble // MZT of Barney
+
+// classic 3 generation pedigree base example
+// indicate Proband with << after the symbol
+// Structured around SIBSHIPS indicated by "+" symbol
+
+[] 	Paternal grandfather @m11
++ 	// PATERNAL GRANDPARENTS
+() 	Paternal grandmother @f12
+--[n] 	Paternal uncles
+--(n) 	Paternal aunts
+--[] 	FATHER @m21
+
+[] 	Maternal grandfather @m13
++ 	// MATERNAL GRANDPARENTS
+() 	Maternal grandmother @f14
+--[n] 	Maternal uncles
+--(n) 	Maternal aunts
+--() 	MOTHER @f22
+  +[] 	Father @m21 // note: refers BACK to previously defined @m21
+  --[n] 	brothers
+  --(n) 	sisters
+  --[]<< 	Proband @p31
+    +()--<n>	Proband's partner & kids
+
