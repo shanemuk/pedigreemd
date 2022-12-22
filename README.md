@@ -59,10 +59,11 @@ I'm still thinking however that indents might make this a bit tricky, especially
 -<4>
 ~~~
 
+## Update 2022-12-22
+Here are some of my [latest thoughts...](pedexamples.txt)
+
 Ideally I'd like to be able to (in principle) take a pedigree in Notepad or Word (or the text editor of your choice), then paste/import it into the EHR or pedigree software, where it would read it and output a pretty pedigree in standard format.
 
-## But here is another thing
-In human genetics, we usually draw pedigrees in Landscape mode. Why do we do this? It's a mess, particularly when we start annotating below symbols. Portrait mode is much better. You heard it here first! :-)
 
 This is very much a work in progress - suggestions welcome!
 
