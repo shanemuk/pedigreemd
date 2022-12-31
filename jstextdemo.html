@@ -1,15 +1,28 @@
-<!DOCTYPE = html>
-<HTML>
-  <div>
-    // Get the text box and the output element
-const textBox = document.getElementById("text-box");
-const output = document.getElementById("output");
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multi-line Text Box Input</title>
+  </head>
+  <body>
+    <!-- Text box element -->
+    <textarea id="text-box"></textarea>
+    <!-- Output element -->
+    <div id="output"></div>
 
-// Add an event listener to the text box that listens for the "input" event
-textBox.addEventListener("input", function() {
-  // Get the value of the text box
-  const text = textBox.value;
+    <!-- JavaScript script -->
+    <script>
+      // Get the text box and the output element
+      const textBox = document.getElementById("text-box");
+      const output = document.getElementById("output");
 
-  // Set the innerHTML of the output element to the value of the text box
-  output.innerHTML = text;
-});
+      // Add an event listener to the text box that listens for the "input" event
+      textBox.addEventListener("input", function() {
+        // Get the value of the text box
+        const text = textBox.value;
+
+        // Set the innerHTML of the output element to the value of the text box
+        output.innerHTML = text;
+      });
+    </script>
+  </body>
+</html>
