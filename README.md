@@ -73,3 +73,20 @@ Interesting project: [pedigreejs](https://ccge-boadicea.github.io/pedigreejs/) -
 ~~~
 
 So we can see to define an individual we need to know their **name** (which is the unique ID); their sex; their mother; their father. Other data attributes can be added as required.
+
+## Further update 2024-12-30
+One of the key things is this has to be usable "in the field" by Genetic doctors and counsellors etc, and I'm thinking the use of special characters is a bit of a barrier. The key thing is to start with an individual - a "PROBAND" - and work out from there, regardless of generation structure. So we only have to define the first degree relatives, and then any subsequent relatives can be nested/indented under them.
+We're still keeping the format of one individual per line, and as long as relationships are defined, we can parse out the additional information from there. Here is a very basic example - it would be trivially easy to write some code to turn this into a "proper" pedigree, and then viewed in an appropriate viewer or imported into a designated database.
+~~~
+PROBAND: Charlene McFlynn
+	MUM: Bertha
+		MUM: Betty
+		DAD: Henry
+		SIS: Wendy Wilson
+		BRO: Nigel Jones
+			SPO: Gillian
+			SON: Neil Jones
+			DAU: Cindy Jones
+			MISC: June 2013
+	DAD: Jimmy McFlynn
+~~~
