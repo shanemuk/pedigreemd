@@ -90,3 +90,17 @@ PROBAND: Charlene McFlynn
 			MISC: June 2013
 	DAD: Jimmy McFlynn
 ~~~
+This works quite nicely, as it defines everyone in relation to everyone else, even if not in a tight pedigree pattern. We also need to indicate information other than names, such as affected status, alive/dead, etc.
+
+### HEADERS
+~~~
+PRO, PROBAND, PROPOSITUS: - the proband in the family
+MUM, MOTHER, MOT: - Mother
+DAD, FATHER, FAT: - Father
+SIS, SISTER: - Sister
+BRO, BROTHER: - Brother
+SIB, SIBLING: - sibling, sex unspecified
+PATHALF - paternal half sibling
+~~~
+
+
