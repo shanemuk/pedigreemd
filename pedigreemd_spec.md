@@ -20,6 +20,7 @@ PRO: Jimmy Bloggs // this is the proband
 Is very easy to note this down in a clinic situation where you're talking with a family member. You basically start with the proband (or whatever individual you're interested in) and work outwards. The job of the Parser will be to turn this into a more "standard" graphical format.
 ## Relationship indicators
 A "Relationship indicator" is typically a 3-letter prefix to a line which tells you how the subject of the line is related to the next level up. This is typically called the "parent" record, but very often will not be the parent in a biological sense. Here is a list of RIs:
+~~~
   PRO - proband
   BRO - brother (full)
   SIS - sister (full)
@@ -42,7 +43,7 @@ A "Relationship indicator" is typically a 3-letter prefix to a line which tells 
   SPO - spouse (in this context, "spouse" means a reproductive partner)
   SPC - spouse, consaunguineous
   SPD - spouse divorced
-  
+~~~  
 Note that some RIs have synonyms to make it easier to record these in clinic. The characters are NOT necessarily hierarchical, although the final character adds context. This format is intended where possible to adhere to a somewhat "gonadal" view of sex and relationships. This is not intended in any way to make a statement in relation to more flexible understandings, but to provide the user with the flexibility to record family trees (pedigrees) as they find appropriate for genetic counselling purposes. PedigreeMD wishes to recognise and affirm our LGBTQIA+ friends, and comments are welcome.
 
 ~~~
