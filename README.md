@@ -1,5 +1,7 @@
 # pedigreemd
 
+## UPDATE: Specification document: .[Pedigree MD specification](https://github.com/shanemuk/pedigreemd/blob/main/pedigreemd_spec.md)
+
 Taking a family tree (pedigree) is an important part of the **Clinical Genetics** consultation, although there are many other settings where drawing a family tree may be useful. It is also becoming increasingly common as people start researching their own genealogy and ancestry.
 
 However there is no standard form of notation when you're coding pedigrees "live", and the very nature of pedigrees makes it difficult to note them down - the biggest problem of course is that everyone has two parents, heading back pretty much ad infinitum, so we don't have one single lineage - we have *many*, and of course those lineages meet multiple common ancestors on their way back into the past. And sometimes there are gaps in our knowledge that may need to be filled in by new information.
