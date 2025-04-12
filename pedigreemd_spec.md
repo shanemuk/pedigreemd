@@ -63,3 +63,15 @@ pos, positive: tested positive for whatever genetic condition is being specified
 neg, negative: tested negative
 // anything that follows this is a comment and will not be parsed further 
 ~~~
+## DISEASES section
+The file can have an optional section for DISEASES, and the first line of this section should say just that: "DISEASES". eg:
+~~~
+DISEASES
+1. Huntington's Disease
+2. Cystic Fibrosis
+3. Lynch syndrome
+~~~
+This allows flexibility and re-use, e.g. 
+~~~
+affected 1,2. 
+~~~
