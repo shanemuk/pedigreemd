@@ -94,7 +94,12 @@ DAD, FATHER, FAT: - Father
 SIS, SISTER: - Sister
 BRO, BROTHER: - Brother
 SIB, SIBLING: - sibling, sex unspecified
-PATHALF - paternal half sibling
+PHX, PATHALF - paternal half sibling
+PHB - paternal half brother
+PHS - paternal half sister
+MHX, MATHALF - maternal half sibling
+MHB - maternal half brother
+MHS - maternal half sister
 ~~~
 I'll be developing this a bit further - I have a nefarious plan to trial this with my team using the simplest palmtop computer I can find - a Psion Series 3a palmtop from the 1990s! (These machines are genius, btw, an I wish they were still making them).
 
