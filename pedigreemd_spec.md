@@ -1,14 +1,14 @@
 # Schema for PedigreeMD
 ## Objective
-To define a text based format for rapidly, easily and legibly recording pedigree information in a clinic using a standard text editor (txt files).
+To define a text based format for rapidly, easily, intuitively and legibly recording pedigree information in a clinic using a standard text editor (txt files).
 
 ## Basics
 * A PedigreeMD file contains a number of lines of text. In the very basic version each line has a max of 255 characters
 * Each line normally defines an individual.
-* first degree relatives of this individual are defined by indented lines.
+* first degree relatives of this individual are defined by indented lines - lines are indented using the TAB character.
 * There can be ambiguity in how this gets defined - it is the job of the parser program to clean this up.
 ## Example
-Here is a small example pedigree. Note the pedigree is **anchored** on the proband, Jimmy Bloggs.
+Here is a small example pedigree. Note the pedigree is **anchored** on the proband, Jimmy Bloggs, and his relatives are specified by **relationship indicators**.
 ~~~
 PRO: Jimmy Bloggs // this is the proband
   SPO: Jenny Bloggs // this is Jimmy's spouse
@@ -18,7 +18,7 @@ PRO: Jimmy Bloggs // this is the proband
     MIS: // Miscarriage
 ~~~
 Is very easy to note this down in a clinic situation where you're talking with a family member. You basically start with the proband (or whatever individual you're interested in) and work outwards. The job of the Parser will be to turn this into a more "standard" graphical format.
-## Relationship indicators
+## Relationship indicators (RI)
 A "Relationship indicator" is typically a 3-letter prefix to a line which tells you how the subject of the line is related to the next level up. This is typically called the "parent" record, but very often will not be the parent in a biological sense. Here is a list of RIs:
 ~~~
   PRO - proband
