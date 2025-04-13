@@ -44,7 +44,7 @@ A "Relationship indicator" is typically a 3-letter prefix to a line which tells 
   SPC - spouse, consaunguineous
   SPD - spouse divorced
 ~~~  
-Note that some RIs have synonyms to make it easier to record these in clinic. The characters are NOT necessarily hierarchical, although the final character adds context. This format is intended where possible to adhere to a somewhat "gonadal" view of sex and relationships. This is not intended in any way to make a statement in relation to more flexible understandings, but to provide the user with the flexibility to record family trees (pedigrees) as they find appropriate for genetic counselling purposes. PedigreeMD wishes to recognise and affirm our LGBTQIA+ friends, and comments are welcome.
+Note that some RIs have synonyms to make it easier to record these in clinic. The characters are NOT necessarily hierarchical, although the final character sometimes adds context. It's intended to be as intuitive as possible. This format typically adheres to a somewhat "gonadal" view of sex and relationships. This is not intended in any way to make a statement in relation to social views of gender, but to provide the user with the flexibility to record family trees (pedigrees) as they find appropriate for genetic counselling purposes. PedigreeMD wishes to recognise and affirm our LGBTQIA+ friends, and comments are welcome.
 
 ~~~
 SIB Erica Bloggs affected HD, deceased
