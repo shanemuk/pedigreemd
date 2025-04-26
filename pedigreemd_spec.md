@@ -75,3 +75,28 @@ This allows flexibility and re-use, e.g.
 ~~~
 affected 1,2. 
 ~~~
+
+## Pedigree of Napoleon Bonaparte
+This example shows the use of PedigreeMD to construct a pedigree based on the use of Napoleon Bonaparte as its principal proband. The pedigree expands as first degree relatives are added. There are a few bits here I need to fix.
+~~~
+PRO: Napoleon Bonaparte
+  MUM: Letizia Bonaparte (24 August 1750 – 2 February 1836) – Mother of Napoleon
+    MHM: Joseph Fesch (3 January 1763 – 13 May 1839) – Roman Catholic cardinal, half-brother of Letizia Bonaparte, uncle of Napoleon
+  DAD: Joseph Bonaparte
+  BRO: Joseph Bonaparte (7 January 1768 – 28 July 1844)
+    DAU: Charlotte (Lolotte) Napoléone Bonaparte (31 October 1802 – 2 March 1839)
+  BRO: Lucien Bonaparte (21 May 1775 – 29 June 1840)
+    DAU: Christine-Egypta Bonaparte (19 October 1798 – 19 May 1847)
+  SIS: Elisa Bonaparte (3 January 1777 – 7 August 1820)
+  BRO: Louis Bonaparte (2 September 1778 – 25 July 1846)
+  SIS: Pauline Bonaparte (20 October 1780 – 9 June 1825)
+  SIS: Caroline Bonaparte (25 March 1782 – 18 May 1839)
+    SON: Achille Murat (21 January 1801 – 15 April 1847)
+  BRO: Jérôme Bonaparte
+    SPO: Elizabeth (Betsy) Patterson Bonaparte (6 February 1785 – 4 April 1879)
+    SON: Jerome (Bo) Patterson Bonaparte (7 July 1805 – 17 June 1870)
+  SON: Napoleon François Charles Joseph (Franz) Bonaparte (20 March 1811 – 22 July 1832) – King of Rome, Duke of Reichstadt
+  ADOPTED: Eugène and Hortense de Beauharnais (3 September 1781 – 21 February 1824; 10 April 1783 – 5 October 1837)
+  SON: Charles Léon Denuelle (13 December 1806 – 14 April 1881) – Napoleon’s illegitimate son
+  SON: Alexandre Colonna Walewksi (4 May 1810 – 27 September 1868) – Napoleon’s illegitimate son
+~~~
