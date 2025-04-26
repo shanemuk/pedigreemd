@@ -80,9 +80,9 @@ affected 1,2.
 This example shows the use of PedigreeMD to construct a pedigree based on the use of Napoleon Bonaparte as its principal proband. The pedigree expands as first degree relatives are added. There are a few bits here I need to fix.
 ~~~
 PRO: Napoleon Bonaparte
-  MUM: Letizia Bonaparte (24 August 1750 – 2 February 1836) – Mother of Napoleon
-    MHM: Joseph Fesch (3 January 1763 – 13 May 1839) – Roman Catholic cardinal, half-brother of Letizia Bonaparte, uncle of Napoleon
-  DAD: Joseph Bonaparte
+  MUM: Maria Letizia Bonaparte (nee Ramolino) (24/8/1750 – 2/2/1836)
+    BRO: Joseph Fesch (3 January 1763 – 13 May 1839) – Roman Catholic cardinal, half-brother
+  DAD: Carlo Maria Buonaparte
   BRO: Joseph Bonaparte (7 January 1768 – 28 July 1844)
     DAU: Charlotte (Lolotte) Napoléone Bonaparte (31 October 1802 – 2 March 1839)
   BRO: Lucien Bonaparte (21 May 1775 – 29 June 1840)
