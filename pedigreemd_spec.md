@@ -77,8 +77,9 @@ affected 1,2.
 ~~~
 
 ## Pedigree of Napoleon Bonaparte
-This example shows the use of PedigreeMD to construct a pedigree based on the use of Napoleon Bonaparte as its principal proband. The pedigree expands as first degree relatives are added. There are a few bits here I need to fix.
+This example shows the use of PedigreeMD to construct a pedigree based on the use of Napoleon Bonaparte as its principal proband. The pedigree expands as first degree relatives are added. There are a few bits here I need to fix. Some of this data is from [Shannon Selin's site](https://shannonselin.com/extras/napoleons-family-tree/) - this is just a preliminary draft, but you can see how easy PedigreeMD is to construct.
 ~~~
+// Pedigree: Napoleon Bonaparte
 PRO: Napoleon Bonaparte
   MUM: Maria Letizia Bonaparte (nee Ramolino) (24/8/1750 – 2/2/1836)
     BRO: Joseph Fesch (3 January 1763 – 13 May 1839) – Roman Catholic cardinal, half-brother
