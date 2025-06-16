@@ -7,7 +7,7 @@ To define a text based format for rapidly, easily, intuitively and legibly recor
 * Each line normally defines an individual.
 * first degree relatives of this individual are defined by indented lines - lines are indented using the TAB character.
 * There can be ambiguity in how this gets defined - it is the job of the parser program to clean this up.
-## Example
+## Example 1
 Here is a small example pedigree. Note the pedigree is **anchored** on the proband, Jimmy Bloggs, and his relatives are specified by **relationship indicators**.
 ~~~
 PRO: Jimmy Bloggs // this is the proband
@@ -17,6 +17,19 @@ PRO: Jimmy Bloggs // this is the proband
     DAU: Nellie Bloggs // Hilda's daughter - note we have not defined Nellie's dad here
     MIS: // Miscarriage
 ~~~
+## Example 2
+Blank 3 generation pedigree, assuming proband is in the middle.
+~~~
+PRO: // Proband
+  MUM: // Mother
+  DAD: // Father
+  SPO: // Spouse
+  SON: // Son
+  DAU: // Daughter
+  BRO: // Brother; can indicate number, eg BRO: 3
+  SIS: // Sister
+~~~
+
 Is very easy to note this down in a clinic situation where you're talking with a family member. You basically start with the proband (or whatever individual you're interested in) and work outwards. The job of the Parser will be to turn this into a more "standard" graphical format.
 ## Relationship indicators (RI)
 A "Relationship indicator" is typically a 3-letter prefix to a line which tells you how the subject of the line is related to the next level up. This is typically called the "parent" record, but very often will not be the parent in a biological sense. Here is a list of RIs:
