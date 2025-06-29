@@ -1,4 +1,5 @@
 # Elements of a pedigreeMD line
+## PLEASE NOTE - THIS IS OUTDATED - INCLUDED FOR INFORMATION ONLY
 1. EXAMPLE
 2. sex: display sex for purposes of pedigree: ```[_]``` for male, ```(_)``` for female, ```<_>``` for sex not specified
     - note: need for other symbols
