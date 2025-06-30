@@ -108,3 +108,6 @@ I'll be developing this a bit further - I have a nefarious plan to trial this wi
 There **are** some vulnerabilities in this format, for example it would be possible to create loops and duplicates, but I'm betting that won't confuse a human, and we can make it so it doesn't confuse a computer either.
 
 More on this anon...
+
+## Some notes etc
+* https://jinghuazhao.github.io/R/vignettes/rnews.pdf - implementation of pedigree drawing in graphviz
