@@ -5,28 +5,73 @@
         <mxCell id="0" style=";html=1;" />
         <mxCell id="1" parent="0" style=";html=1;" />
         <mxCell id="NN37ZtDUL2TfdCFy3z1e-1" parent="1" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;html=1;" value="Pool" vertex="1">
-          <mxGeometry height="820" width="880" x="40" y="260" as="geometry" />
+          <mxGeometry height="820" width="800" x="40" y="260" as="geometry" />
         </mxCell>
         <mxCell id="NN37ZtDUL2TfdCFy3z1e-2" parent="NN37ZtDUL2TfdCFy3z1e-1" style="swimlane;startSize=20;html=1;" value="EPIC" vertex="1">
-          <mxGeometry height="800" width="230" y="20" as="geometry" />
+          <mxGeometry height="800" width="200" y="20" as="geometry" />
         </mxCell>
-        <mxCell id="NN37ZtDUL2TfdCFy3z1e-7" parent="NN37ZtDUL2TfdCFy3z1e-2" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="PID" vertex="1">
-          <mxGeometry height="80" width="120" x="55" y="50" as="geometry" />
+        <mxCell id="NN37ZtDUL2TfdCFy3z1e-7" parent="NN37ZtDUL2TfdCFy3z1e-2" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="PID&lt;div&gt;Demographics&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="40" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="NN37ZtDUL2TfdCFy3z1e-8" parent="NN37ZtDUL2TfdCFy3z1e-2" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="EPISODES" vertex="1">
-          <mxGeometry height="80" width="120" x="55" y="150" as="geometry" />
+        <mxCell id="NN37ZtDUL2TfdCFy3z1e-8" parent="NN37ZtDUL2TfdCFy3z1e-2" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="EPISODES, encounters" vertex="1">
+          <mxGeometry height="80" width="120" x="40" y="150" as="geometry" />
         </mxCell>
         <mxCell id="NN37ZtDUL2TfdCFy3z1e-9" parent="NN37ZtDUL2TfdCFy3z1e-2" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="PROCEDURES" vertex="1">
-          <mxGeometry height="80" width="120" x="55" y="250" as="geometry" />
+          <mxGeometry height="80" width="120" x="40" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="NN37ZtDUL2TfdCFy3z1e-19" parent="NN37ZtDUL2TfdCFy3z1e-2" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="Dashboards" vertex="1">
+          <mxGeometry height="80" width="120" x="40" y="370" as="geometry" />
         </mxCell>
         <mxCell id="NN37ZtDUL2TfdCFy3z1e-3" parent="NN37ZtDUL2TfdCFy3z1e-1" style="swimlane;startSize=20;html=1;" value="STARLIMS" vertex="1">
-          <mxGeometry height="800" width="210" x="230" y="20" as="geometry" />
+          <mxGeometry height="800" width="200" x="200" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="NN37ZtDUL2TfdCFy3z1e-15" parent="NN37ZtDUL2TfdCFy3z1e-3" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="Samples" vertex="1">
+          <mxGeometry height="80" width="120" x="40" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="NN37ZtDUL2TfdCFy3z1e-16" parent="NN37ZtDUL2TfdCFy3z1e-3" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="Germlime" vertex="1">
+          <mxGeometry height="80" width="120" x="40" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="NN37ZtDUL2TfdCFy3z1e-17" parent="NN37ZtDUL2TfdCFy3z1e-3" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="Somatic" vertex="1">
+          <mxGeometry height="80" width="120" x="40" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="NN37ZtDUL2TfdCFy3z1e-24" parent="NN37ZtDUL2TfdCFy3z1e-3" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" value="Patients" vertex="1">
+          <mxGeometry height="60" width="120" x="40" y="60" as="geometry" />
         </mxCell>
         <mxCell id="NN37ZtDUL2TfdCFy3z1e-4" parent="NN37ZtDUL2TfdCFy3z1e-1" style="swimlane;startSize=20;html=1;" value="GENOCEANIC" vertex="1">
-          <mxGeometry height="800" width="220" x="440" y="20" as="geometry" />
+          <mxGeometry height="800" width="200" x="400" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="NN37ZtDUL2TfdCFy3z1e-13" parent="NN37ZtDUL2TfdCFy3z1e-4" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="Phenotypes" vertex="1">
+          <mxGeometry height="80" width="120" x="40" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="NN37ZtDUL2TfdCFy3z1e-10" parent="NN37ZtDUL2TfdCFy3z1e-4" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="Guidelines" vertex="1">
+          <mxGeometry height="80" width="120" x="40" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="NN37ZtDUL2TfdCFy3z1e-18" parent="NN37ZtDUL2TfdCFy3z1e-4" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="Registry" vertex="1">
+          <mxGeometry height="80" width="120" x="40" y="370" as="geometry" />
         </mxCell>
         <mxCell id="NN37ZtDUL2TfdCFy3z1e-6" parent="NN37ZtDUL2TfdCFy3z1e-1" style="swimlane;startSize=20;html=1;" value="PEDIGREE" vertex="1">
-          <mxGeometry height="800" width="220" x="660" y="20" as="geometry" />
+          <mxGeometry height="800" width="200" x="600" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="NN37ZtDUL2TfdCFy3z1e-11" parent="NN37ZtDUL2TfdCFy3z1e-6" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="Pedigrees" vertex="1">
+          <mxGeometry height="80" width="120" x="40" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="NN37ZtDUL2TfdCFy3z1e-12" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="Risk Calc" vertex="1">
+          <mxGeometry height="80" width="120" x="880" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="NN37ZtDUL2TfdCFy3z1e-14" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="External labs" vertex="1">
+          <mxGeometry height="80" width="120" x="880" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="NN37ZtDUL2TfdCFy3z1e-20" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="Health Analytics Platform" vertex="1">
+          <mxGeometry height="80" width="120" x="880" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="NN37ZtDUL2TfdCFy3z1e-21" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="Trusted Research Environment" vertex="1">
+          <mxGeometry height="80" width="120" x="1020" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="NN37ZtDUL2TfdCFy3z1e-23" edge="1" parent="1" source="NN37ZtDUL2TfdCFy3z1e-20" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;curved=0;" target="NN37ZtDUL2TfdCFy3z1e-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NN37ZtDUL2TfdCFy3z1e-22" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="Honest Broker" vertex="1">
+          <mxGeometry height="80" width="120" x="1020" y="720" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
